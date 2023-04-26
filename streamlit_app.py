@@ -32,7 +32,7 @@ import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
-streamlit.text(fruityvice_response.json()) #just write the data to the screen
+#streamlit.text(fruityvice_response.json()) #just write the data to the screen
 
 # Take the json version of the response and normalized it  
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
